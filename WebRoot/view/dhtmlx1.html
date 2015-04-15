@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Loading from JSON</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <!--<link rel="stylesheet" type="text/css" href="../../../codebase/dhtmlx.css"/>-->
+    <!--<script src="../../../codebase/dhtmlx.js"></script>-->
+    <link rel="stylesheet" type="text/css" href="../codebase/dhtmlx.css"/>
+    <script src="../codebase/dhtmlx.js"></script>
+    <script src="../js/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            data={
+                rows:[
+                    {
+                        id:1001,
+                        data:[
+                            "1",
+                            "2014-12-04",
+                            "凤凰古城风景名胜区 ",
+                            "法院服务点",
+                            "田静玲",
+                            "学生票",
+                            "散票",
+                            "48",
+                            "960"] },
+                    { id:1002,
+                        data:[
+                            "2",
+                            "2014-12-04",
+                            "凤凰古城风景名胜区 ",
+                            "法院服务点",
+                            "田静玲",
+                            "学生票",
+                            "散票",
+                            "48",
+                            "960"] },
+                    { id:1003,
+                        data:[
+                            "3",
+                            "2014-12-04",
+                            "凤凰古城风景名胜区 ",
+                            "法院服务点",
+                            "田静玲",
+                            "学生票",
+                            "散票",
+                            "48",
+                            "960"] },
+                    { id:1004,
+                        data:[
+                            "4",
+                            "2014-12-04",
+                            "凤凰古城风景名胜区 ",
+                            "法院服务点",
+                            "田静玲",
+                            "学生票",
+                            "散票",
+                            "48",
+                            "960"] },
+                    { id:1005,
+                        data:[
+                            "5",
+                            "2014-12-04",
+                            "凤凰古城风景名胜区 ",
+                            "法院服务点",
+                            "田静玲",
+                            "学生票",
+                            "散票",
+                            "48",
+                            "960"] }
+                ]
+            };
+
+            var myGrid,mainGrid;
+
+            mainGrid = new dhtmlXGridObject('mainBox');
+            mainGrid.setImagePath("../../../codebase/imgs/");
+            mainGrid.setHeader("序号,日期,门票,售票站点,售票员,门票类型,团散,数量,金额");
+            mainGrid.setInitWidths("80,100,200,120,80,80,80,80,*");
+            mainGrid.setColAlign("right,left,left,left,left,left,left,left,left");
+            mainGrid.setColTypes("ro,ed,ed,ed,ed,ed,ed,ed,ed");
+            mainGrid.setColSorting("int,date,str,str,str,str,str,str,str");
+            mainGrid.init();
+            mainGrid.parse(data,"json");
+
+        });
+    </script>
+
+</head>
+<body>
+<center>
+<div>
+    <div id="mainBox" style="width:1000px; height:200px; background-color:white;"></div>
+</div>
+</center>
+</body>
+</html>

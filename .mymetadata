@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="dhtmlx"
+  id="myeclipse.1425636966793"
+  context-root="/dhtmlx"
+  j2ee-spec="5.0"
+  archive="dhtmlx.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

@@ -1,0 +1,332 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Bootstrap</title>
+    <!-- 包含头部信息用于适应不同设备 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 引入 Bootstrap -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+<div class="container">
+    <div>
+        <div class="btn-group">
+            <button type="button" class="btn btn-default">实时</button>
+            <button type="button" class="btn btn-default">昨日</button>
+            <button type="button" class="btn btn-default">昨月</button>
+            <button type="button" class="btn btn-default">上年</button>
+        </div>
+        <!-- one table -->
+        <h5 class="red">当日营业情况</h5>
+        <table class="table table-striped table-bordered">
+            <!--<thead>
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Street</th>
+            </tr>
+            </thead>-->
+            <tbody>
+            <tr class="success">
+                <td>销售数量</td>
+                <td><a href="two.html">1233</a></td>
+                <td><a href="four.html">销售走势图</a></td>
+                <td><a href="one.html">同比</a></td>
+                <td>退票数量</td>
+                <td><a href="three.html">25</a></td>
+                <td>变更数量</td>
+                <td>30</td>
+            </tr>
+            <tr class="warning">
+                <td>销售金额</td>
+                <td colspan="3">￥632120</td>
+                <td>退票金额</td>
+                <td>￥3233</td>
+                <td>变更金额</td>
+                <td>￥2899</td>
+            </tr>
+            <tr class="danger">
+                <td>检票数量</td>
+                <td colspan="7">2052</td>
+            </tr>
+            </tbody>
+        </table>
+
+        <!-- two table -->
+        <div class="row">
+            <div class="col-xs-6">
+        <h5 class="red">售票站点</h5>
+        <table class="table table-striped table-bordered">
+            <tbody>
+            <tr>
+                <td>城北售票站</td>
+                <td><a href="ten.html">数量：244</a></td>
+                <td>金额：5360</td>
+                <td>售票员</td>
+            </tr>
+            <tr>
+                <td>法院售票站</td>
+                <td>数量：244</td>
+                <td>金额：5360</td>
+                <td>售票员</td>
+            </tr>
+            <tr>
+                <td>南长城售票站</td>
+                <td>数量：244</td>
+                <td>金额：5360</td>
+                <td>售票员</td>
+            </tr>
+            <tr>
+                <td>奇梁洞售票站</td>
+                <td>数量：244</td>
+                <td>金额：5360</td>
+                <td>售票员</td>
+            </tr>
+            <tr class="success">
+                <td>团结售票站</td>
+                <td>数量：244</td>
+                <td>金额：5360</td>
+                <td>售票员</td>
+            </tr>
+            <tbody id="collapseOne" class="collapse out">
+                <tr>
+                    <td>more one</td>
+                    <td>数量：244</td>
+                    <td>金额：5360</td>
+                    <td>售票员</td>
+                </tr>
+                <tr>
+                    <td>more two</td>
+                    <td>数量：244</td>
+                    <td>金额：5360</td>
+                    <td>售票员</td>
+                </tr>
+                <tr>
+                    <td>more three</td>
+                    <td>数量：244</td>
+                    <td>金额：5360</td>
+                    <td>售票员</td>
+                </tr>
+            </tbody>
+            <tr>
+                <td colspan="4">
+                    <span><a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">展开↓</a></span>
+                    <span style="padding-left: 420px"><a href="two.html">查看详情>></a></span>
+                </td>
+            </tr>
+            </tbody>
+        </table></div>
+
+        <!-- three table -->
+            <div class="col-xs-6">
+        <h5 class="red">门票种类</h5>
+        <table class="table table-striped table-bordered">
+            <tbody>
+            <tr>
+                <td>散客票</td>
+                <td>数量：244</td>
+                <td>金额：5360</td>
+                <td>销售走势图</td>
+            </tr>
+            <tr>
+                <td>团队票</td>
+                <td>数量：244</td>
+                <td>金额：5360</td>
+                <td>销售走势图</td>
+            </tr>
+            <tr>
+                <td>学生票</td>
+                <td>数量：244</td>
+                <td>金额：5360</td>
+                <td>销售走势图</td>
+            </tr>
+            <tr>
+                <td>南长城</td>
+                <td>数量：244</td>
+                <td>金额：5360</td>
+                <td>销售走势图</td>
+            </tr>
+            <tr>
+                <td>龙凤套票</td>
+                <td>数量：244</td>
+                <td>金额：5360</td>
+                <td>销售走势图</td>
+            </tr>
+            <tr>
+                <td colspan="4" align="right"><a href="two.html">查看详情>></a></td>
+            </tr>
+            </tbody>
+        </table></div>
+        </div>
+
+        <!-- four table -->
+        <div class="row">
+            <div class="col-xs-6">
+        <h5 class="red">销售员</h5>
+        <table class="table table-striped table-bordered">
+            <tbody>
+            <tr>
+                <td>陈荣丽</td>
+                <td>数量：244</td>
+                <td>金额：5360</td>
+                <td>销售走势图</td>
+            </tr>
+            <tr>
+                <td>付晓旭</td>
+                <td>数量：244</td>
+                <td>金额：5360</td>
+                <td>销售走势图</td>
+            </tr>
+            <tr>
+                <td>付媛</td>
+                <td>数量：244</td>
+                <td>金额：5360</td>
+                <td>销售走势图</td>
+            </tr>
+            <tr>
+                <td>刘文慧</td>
+                <td>数量：244</td>
+                <td>金额：5360</td>
+                <td>销售走势图</td>
+            </tr>
+            <tr>
+                <td>文小群</td>
+                <td>数量：244</td>
+                <td>金额：5360</td>
+                <td>销售走势图</td>
+            </tr>
+            <tr>
+                <td colspan="4" align="right"><a href="two.html">查看详情>></a></td>
+            </tr>
+            </tbody>
+        </table></div>
+
+        <!--  five table -->
+            <div class="col-xs-6">
+        <h5 class="red">购票人属性</h5>
+        <table class="table table-striped table-bordered">
+            <tbody>
+            <tr>
+                <td>旅行社/导游</td>
+                <td>数量：244</td>
+                <td>金额：5360</td>
+            </tr>
+            <tr>
+                <td>散客/其他</td>
+                <td>数量：244</td>
+                <td>金额：5360</td>
+            </tr>
+            <tr>
+                <td>线上</td>
+                <td>数量：244</td>
+                <td>金额：5360</td>
+            </tr>
+            <tr>
+                <td colspan="4" align="right"><a href="two.html">查看详情>></a></td>
+            </tr>
+            </tbody>
+        </table></div>
+        </div>
+
+        <!-- six table -->
+        <h5 class="red">当日返利票情况</h5>
+        <table class="table table-striped table-bordered">
+            <tbody>
+            <tr class="success">
+                <td>销售数量</td>
+                <td>1233</td>
+                <td>销售走势图</td>
+                <td>同比</td>
+                <td>退票数量</td>
+                <td>25</td>
+                <td>变更数量</td>
+                <td>30</td>
+            </tr>
+            <tr class="warning">
+                <td>销售金额</td>
+                <td colspan="3">￥632120</td>
+                <td>退票金额</td>
+                <td>￥3233</td>
+                <td>变更金额</td>
+                <td>￥2899</td>
+            </tr>
+            <tr class="danger">
+                <td>检票数量</td>
+                <td colspan="7">2052</td>
+            </tr>
+            </tbody>
+        </table>
+
+        <!-- seven table -->
+        <h5 class="red">当日免票情况</h5>
+        <table class="table table-striped table-bordered">
+            <tbody>
+            <tr class="success">
+                <td>销售数量</td>
+                <td>1233</td>
+                <td>销售走势图</td>
+                <td>同比</td>
+                <td>退票数量</td>
+                <td>25</td>
+                <td>变更数量</td>
+                <td>30</td>
+            </tr>
+            <tr class="warning">
+                <td>销售金额</td>
+                <td colspan="3">￥632120</td>
+                <td>退票金额</td>
+                <td>￥3233</td>
+                <td>变更金额</td>
+                <td>￥2899</td>
+            </tr>
+            <tr class="danger">
+                <td>检票数量</td>
+                <td colspan="7">2052</td>
+            </tr>
+            </tbody>
+        </table>
+
+        <!-- eight table -->
+        <h5 class="red">当日特价票情况</h5>
+        <table class="table table-striped table-bordered">
+            <tbody>
+            <tr class="success">
+                <td>销售数量</td>
+                <td>1233</td>
+                <td>销售走势图</td>
+                <td>同比</td>
+                <td>退票数量</td>
+                <td>25</td>
+                <td>变更数量</td>
+                <td>30</td>
+            </tr>
+            <tr class="warning">
+                <td>销售金额</td>
+                <td colspan="3">￥632120</td>
+                <td>退票金额</td>
+                <td>￥3233</td>
+                <td>变更金额</td>
+                <td>￥2899</td>
+            </tr>
+            <tr class="danger">
+                <td>检票数量</td>
+                <td colspan="7">2052</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<!-- JavaScript 放置在文档最后面可以使页面加载速度更快 -->
+<!-- 可选: 包含 jQuery 库 -->
+<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+<script src="../js/jquery.min.js"></script>
+<!-- 可选: 合并了 Bootstrap JavaScript 插件 -->
+<script src="../js/bootstrap.min.js"></script>
+</body>
+
+</html>
+			

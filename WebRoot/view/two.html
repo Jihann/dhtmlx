@@ -1,0 +1,335 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Bootstrap</title>
+    <!-- 包含头部信息用于适应不同设备 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 引入 Bootstrap -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/bootstrap-table.min.css"/>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+<div class="container">
+    <div class="table-responsive">
+        <!-- one table -->
+        <table id="table"
+               data-toggle="table"
+               data-show-columns="true"
+               data-search="true"
+               data-pagination="true"
+               data-height="500">
+            <thead>
+            <tr>
+                <th data-align="center">序号</th>
+                <th data-align="center">日期</th>
+                <th data-align="center">门票</th>
+                <th data-align="center">售票站点</th>
+                <th data-align="center">售票员</th>
+                <th data-align="center">门票类型</th>
+                <th data-align="center">団散</th>
+                <th data-align="center">数量</th>
+                <th data-align="center">金额</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>1 <a href="javascript:void(0);" onclick="_show();">+</a></td>
+                <td>2015-03-01</td>
+                <td>凤凰古城风景名胜区</td>
+                <td>法院服务点</td>
+                <td>田静玲</td>
+                <td>学生票</td>
+                <td>散票</td>
+                <td>48</td>
+                <td>960</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>2015-03-02</td>
+                <td>凤凰古城风景名胜区+奇梁洞景区</td>
+                <td>法院服务点</td>
+                <td>田静玲</td>
+                <td>学生票</td>
+                <td>散票</td>
+                <td>56</td>
+                <td>960</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>2015-03-03</td>
+                <td>凤凰古城风景名胜区+南方长城景区</td>
+                <td>法院服务点</td>
+                <td>田静玲</td>
+                <td>学生票</td>
+                <td>散票</td>
+                <td>20</td>
+                <td>960</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>2015-03-04</td>
+                <td>凤凰古城风景名胜区+南方长城景区</td>
+                <td>法院服务点</td>
+                <td>田静玲</td>
+                <td>学生票</td>
+                <td>散票</td>
+                <td>100</td>
+                <td>960</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>2015-03-04</td>
+                <td>凤凰古城风景名胜区+南方长城景区</td>
+                <td>法院服务点</td>
+                <td>田静玲</td>
+                <td>学生票</td>
+                <td>散票</td>
+                <td>13</td>
+                <td>960</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>2015-03-04</td>
+                <td>凤凰古城风景名胜区+南方长城景区</td>
+                <td>法院服务点</td>
+                <td>田静玲</td>
+                <td>学生票</td>
+                <td>散票</td>
+                <td>25</td>
+                <td>960</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>2015-03-04</td>
+                <td>凤凰古城风景名胜区+南方长城景区</td>
+                <td>法院服务点</td>
+                <td>田静玲</td>
+                <td>学生票</td>
+                <td>散票</td>
+                <td>96</td>
+                <td>960</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>2015-03-04</td>
+                <td>凤凰古城风景名胜区+南方长城景区</td>
+                <td>法院服务点</td>
+                <td>田静玲</td>
+                <td>学生票</td>
+                <td>散票</td>
+                <td>78</td>
+                <td>960</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>2015-03-04</td>
+                <td>凤凰古城风景名胜区+南方长城景区</td>
+                <td>法院服务点</td>
+                <td>田静玲</td>
+                <td>学生票</td>
+                <td>散票</td>
+                <td>41</td>
+                <td>960</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>2015-03-04</td>
+                <td>凤凰古城风景名胜区+南方长城景区</td>
+                <td>法院服务点</td>
+                <td>田静玲</td>
+                <td>学生票</td>
+                <td>散票</td>
+                <td>40</td>
+                <td>960</td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td>2015-03-04</td>
+                <td>凤凰古城风景名胜区+南方长城景区</td>
+                <td>法院服务点</td>
+                <td>田静玲</td>
+                <td>学生票</td>
+                <td>散票</td>
+                <td>48</td>
+                <td>960</td>
+            </tr>
+            <tr>
+                <td>12</td>
+                <td>2015-03-04</td>
+                <td>凤凰古城风景名胜区+南方长城景区</td>
+                <td>法院服务点</td>
+                <td>田静玲</td>
+                <td>学生票</td>
+                <td>散票</td>
+                <td>48</td>
+                <td>960</td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>2015-03-04</td>
+                <td>凤凰古城风景名胜区+南方长城景区</td>
+                <td>法院服务点</td>
+                <td>田静玲</td>
+                <td>学生票</td>
+                <td>散票</td>
+                <td>48</td>
+                <td>960</td>
+            </tr>
+            <tr>
+                <td>14</td>
+                <td>2015-03-04</td>
+                <td>凤凰古城风景名胜区+南方长城景区</td>
+                <td>法院服务点</td>
+                <td>田静玲</td>
+                <td>学生票</td>
+                <td>散票</td>
+                <td>48</td>
+                <td>960</td>
+            </tr>
+            <tr>
+                <td>15</td>
+                <td>2015-03-04</td>
+                <td>凤凰古城风景名胜区+南方长城景区</td>
+                <td>法院服务点</td>
+                <td>田静玲</td>
+                <td>学生票</td>
+                <td>散票</td>
+                <td>48</td>
+                <td>960</td>
+            </tr>
+            <tr>
+                <td>16</td>
+                <td>2015-03-04</td>
+                <td>凤凰古城风景名胜区+南方长城景区</td>
+                <td>法院服务点</td>
+                <td>田静玲</td>
+                <td>学生票</td>
+                <td>散票</td>
+                <td>48</td>
+                <td>960</td>
+            </tr>
+            <tr>
+                <td>17</td>
+                <td>2015-03-04</td>
+                <td>凤凰古城风景名胜区+南方长城景区</td>
+                <td>法院服务点</td>
+                <td>田静玲</td>
+                <td>学生票</td>
+                <td>散票</td>
+                <td>48</td>
+                <td>960</td>
+            </tr>
+            <tr>
+                <td>18</td>
+                <td>2015-03-04</td>
+                <td>凤凰古城风景名胜区+南方长城景区</td>
+                <td>法院服务点</td>
+                <td>田静玲</td>
+                <td>学生票</td>
+                <td>散票</td>
+                <td>48</td>
+                <td>960</td>
+            </tr>
+            <tr>
+                <td>19</td>
+                <td>2015-03-04</td>
+                <td>凤凰古城风景名胜区+南方长城景区</td>
+                <td>法院服务点</td>
+                <td>田静玲</td>
+                <td>学生票</td>
+                <td>散票</td>
+                <td>48</td>
+                <td>960</td>
+            </tr>
+            <tr>
+                <td>20</td>
+                <td>2015-03-04</td>
+                <td>凤凰古城风景名胜区+南方长城景区</td>
+                <td>法院服务点</td>
+                <td>田静玲</td>
+                <td>学生票</td>
+                <td>散票</td>
+                <td>48</td>
+                <td>960</td>
+            </tr>
+            <tr>
+                <td>21</td>
+                <td>2015-03-04</td>
+                <td>凤凰古城风景名胜区+南方长城景区</td>
+                <td>法院服务点</td>
+                <td>田静玲</td>
+                <td>学生票</td>
+                <td>散票</td>
+                <td>48</td>
+                <td>960</td>
+            </tr>
+            <tr>
+                <td>22</td>
+                <td>2015-03-04</td>
+                <td>凤凰古城风景名胜区+南方长城景区</td>
+                <td>法院服务点</td>
+                <td>田静玲</td>
+                <td>学生票</td>
+                <td>散票</td>
+                <td>48</td>
+                <td>960</td>
+            </tr>
+            <tr>
+                <td>23</td>
+                <td>2015-03-04</td>
+                <td>凤凰古城风景名胜区+南方长城景区</td>
+                <td>法院服务点</td>
+                <td>田静玲</td>
+                <td>学生票</td>
+                <td>散票</td>
+                <td>48</td>
+                <td>960</td>
+            </tr>
+            <tr>
+                <td>24</td>
+                <td>2015-03-04</td>
+                <td>凤凰古城风景名胜区+南方长城景区</td>
+                <td>法院服务点</td>
+                <td>田静玲</td>
+                <td>学生票</td>
+                <td>散票</td>
+                <td>48</td>
+                <td>960</td>
+            </tr>
+            <tr>
+                <td>25</td>
+                <td>2015-03-04</td>
+                <td>凤凰古城风景名胜区+南方长城景区</td>
+                <td>法院服务点</td>
+                <td>田静玲</td>
+                <td>学生票</td>
+                <td>散票</td>
+                <td>48</td>
+                <td>960</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<!-- JavaScript 放置在文档最后面可以使页面加载速度更快 -->
+<!-- 可选: 包含 jQuery 库 -->
+<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+<script src="../js/jquery.min.js"></script>
+<!-- 可选: 合并了 Bootstrap JavaScript 插件 -->
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/bootstrap-table.js"></script>
+<script type="text/javascript">
+    jQuery(function(){
+       _show = function(){
+
+       }
+    });
+</script>
+</body>
+
+</html>
+			

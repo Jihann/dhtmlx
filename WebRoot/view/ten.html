@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="title" content="Samples" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+
+    <link rel="stylesheet" type="text/css" href="../codebase/dhtmlx.css"/>
+
+    <title>地区统计信息表</title>
+    <script  src="../codebase/dhtmlxcommon.js"></script>
+    <script  src="../codebase/dhtmlxgrid.js"></script>
+    <script  src="../codebase/dhtmlxgridcell.js"></script>
+    <script  src="../codebase/dhtmlxgrid_json.js"></script>
+    <script  src="../codebase/dhtmlxtreegrid.js"></script>
+
+</head>
+<body>
+<center>
+  <div id="gridbox" style="width:1000px;height:137px;background-color:white; line-height: 1.55"></div>
+</center>
+  <script>
+      var mygrid = new dhtmlXGridObject('gridbox');
+      mygrid.selMultiRows = true;
+      mygrid.imgURL = "../imgs/icons_greenfolders/";
+      mygrid.setHeader("序号,地点,门票,售票站点,售票员,门票类型,団散,数量,金额");
+      mygrid.setInitWidths("80,100,200,120,80,80,80,80,*");
+      mygrid.setColAlign("left,left,left,left,center");
+      mygrid.setColTypes("ro,tree,ro,ro,ro,ro");
+      mygrid.setColSorting("str,str,str,na,str");
+      mygrid.init();
+      mygrid.setSkin("dhx_skyblue");
+      mygrid.load("../common/data.json", "json");
+  </script>
+</body>
+</html>
